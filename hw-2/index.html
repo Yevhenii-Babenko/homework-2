@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>"Поняття Front-End. HTML"</title>
+</head>
+<body>
+<style>
+    table, th, td {
+        border: 2px solid black;
+        border-collapse: collapse;
+        border-spacing: 5px;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
+    .mail {
+        text-align: center;
+    }
+
+    .my-form{
+        font-family: serif;
+        font-size: 18px;
+    }
+
+    label {
+        padding: 5px;
+        width: 150px;
+        display: block;
+        cursor: pointer;
+    }
+
+    #click {
+    padding: 5px;
+    }
+</style>
+<table style="width:30%">
+    <thead>
+    <tr>
+        <th>Ім'я</th>
+        <th>Прізвище</th>
+        <th>Телефон</th>
+        <th class="mail">Email</th></tr></thead>
+    <tbody>
+    <tr>
+        <td>Іван</td>
+        <td>Іванов</td>
+        <td>+380974444555</td>
+        <td class="mail">iivanow@ukr.net</td>
+    </tr>
+    <tr>
+        <td>Петро</td>
+        <td>Петров</td>
+        <td>+380987777333</td>
+        <td class="mail">ppetrow@gmail.com</td>
+    </tr>
+    <tr>
+        <td>Семен</td>
+        <td>Семенов</td>
+        <td>+380935555222</td>
+        <td class="mail">ssemenow@email.com</td>
+    </tr>
+    <tr>
+        <td>Олександр</td>
+        <td>Олександров</td>
+        <td>+380632222111</td>
+        <td class="mail">ooleksandrow@ex.ua</td>
+    </tr>
+    <tr>
+        <td>Василь</td>
+        <td>Васильов</td>
+        <td>+380639999555</td>
+        <td class="mail">vvasyliov@gmail.com</td>
+    </tr>
+    </tbody>
+</table>
+ <h2 style="margin: 2%"> Форма </h2>
+<form class="my-form">
+    <div>
+        <label for="Username">Ваше ім'я</label>
+    <input id="Username" type="text" placeholder="Укажіть ім'я" required></div>
+    <div><label for="User-surname">Ваше прізвище</label>
+    <input id="User-surname" type="text" placeholder="Укажіть прізвище" required></div>
+    <div>
+        <div>
+            <label for="gender">Ваша стать</label>
+        <input id="gender" name="your-gender" type="radio" checked>Чоловік
+            <input name="your-gender" type="radio">Жінка
+        </div>
+        <br>
+    <div>
+        <textarea name="questions" cols="50" rows="5" placeholder="Напишіть своє питання "></textarea>
+    </div>
+        <div>
+               <label><input type="checkbox" name="language">Українська</label>
+               <label><input type="checkbox" name="language">Російська</label>
+               <label><input type="checkbox" name="language">Англійська</label>
+           </div>
+        <label for="select-city">Ваше місто</label>
+        <select id="select-city"  style="font-size: 16px">
+            <option disabled selected>Виберіть місто</option>
+            <option value="Lviv">Львів</option>
+            <option value="Ivano-Frankivsk">Івано-Франківськ</option>
+            <option value="Ternopil">Тернопіль</option>
+            <option value="Kyiv">Київ</option>
+            <option value="Rivne">Рівне</option>
+            <option value="Lutsk">Луцьк</option>
+            <option value="Vinnytsia">Вінниця</option>
+            <option value="Khmelnytskyi">Хмельницький</option>
+            <option value="Kharkiv">Харків</option>
+            <option value="Chernivtsi">Чернівці</option>
+            <option value="Zhytomyr">Житомир</option>
+        </select>
+        </div>
+        <div id="click"> <input type="submit"></div>
+</form>
+</body>
+</html>
